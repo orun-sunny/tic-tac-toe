@@ -1,39 +1,29 @@
-export default function Sqaure() {
+function Square({ value }) {
+  return (
+    <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
+      {value}
+    </button>
+  );
+}
+
+export default function Board() {
   return (
     <>
       <div>
-        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
-          X
-        </button>
-        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
-          X
-        </button>
-        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
-          X
-        </button>
+        <Square value="1" />
+        <Square />
+        <Square />
       </div>
 
       <div>
-        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
-          X
-        </button>
-        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
-          X
-        </button>
-        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
-          X
-        </button>
+        <Square />
+        <Square />
+        <Square />
       </div>
       <div>
-        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
-          X
-        </button>
-        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
-          X
-        </button>
-        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
-          X
-        </button>
+        <Square />
+        <Square />
+        <Square />
       </div>
     </>
   );
