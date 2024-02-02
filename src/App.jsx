@@ -1,3 +1,40 @@
-export default function App() {
-  return <h1 className="text-3xl font-bold">Hello tik tac tow</h1>;
+export default function Sqaure() {
+  return (
+    <>
+      <div>
+        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
+          X
+        </button>
+        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
+          X
+        </button>
+        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
+          X
+        </button>
+      </div>
+
+      <div>
+        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
+          X
+        </button>
+        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
+          X
+        </button>
+        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
+          X
+        </button>
+      </div>
+      <div>
+        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
+          X
+        </button>
+        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
+          X
+        </button>
+        <button className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg">
+          X
+        </button>
+      </div>
+    </>
+  );
 }
