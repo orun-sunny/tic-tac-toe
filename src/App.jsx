@@ -1,39 +1,19 @@
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function Square() {
-  const [value, setValue] = useState(null);
-  function handleClick() {
-    setValue("X");
-  }
+import UserListPage from "./components/UserListPage";
+import UserDetailsPage from "./components/UserDetailsPage";
+
+function App() {
   return (
-    <button
-      className="bg-white border border-gray-800 h-12 w-12 m-2 leading-9 text-lg"
-      onClick={handleClick}
-    >
-      {value}
-    </button>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<UserListPage />} />
+          <Route path="/user/:userId" element={<UserDetailsPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
-export default function Board() {
-  return (
-    <>
-      <div className="flex">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-
-      <div className="flex">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-      <div className="flex">
-        <Square />
-        <Square />
-        <Square />
-      </div>
-    </>
-  );
-}
+export default App;
